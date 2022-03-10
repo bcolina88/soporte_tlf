@@ -80,12 +80,12 @@ Listado de usuarios | Soporte Tec.
                           
 
 
-			               @if ($user->active === 1)
+			               @if ($user->active == 1)
 			              <a href="{{route("usuarios.deactivate", ['id' => $user->id])}}" onclick="return confirm('Seguro que Desea Deshabilitar a {{$user->nombre}} {{$user->apellido}}')" class="btn btn-default btn-primary fa fa-toggle-on" data-toggle="tooltip" data-placement="top" title="Deshabilitar"><b></b></a> 
 			              @endif
 
 
-			               @if ($user->active === 0)
+			               @if ($user->active == 0)
 			              <a href="{{route("usuarios.activate", ['id' => $user->id])}}" onclick="return confirm('Seguro que Desea Habilitar a {{$user->nombre}} {{$user->apellido}}')" class="btn btn-default btn-primary fa fa-toggle-off" data-toggle="tooltip" data-placement="top" title="Habilitar"><b></b></a> 
 			              @endif
 
