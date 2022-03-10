@@ -39,10 +39,21 @@ class ClientesController extends Controller
 
         $search = $request->get('search');
 
-        $users = User::Join('roles', function($f) use($search)
+
+
+                     $users = User::Where('users.idrole','=',2)
+                  
+                                     ->orderBy('users.id','DESC')
+                                     ->paginate(25);
+
+
+
+
+
+      /*  $users = User::Join('roles', function($f) use($search)
                     {
                         $f->on('roles.id','=','users.idrole')
-                          ->orWhere('roles.id','=',2);
+                          ->orWhere('users.idrole','=',2);
                     
                     })->orWhere('users.nombre','LIKE','%'.$search.'%')
                       ->orWhere('users.apellido','LIKE','%'.$search.'%')
@@ -51,9 +62,10 @@ class ClientesController extends Controller
                       ->orWhere('users.id','LIKE','%'.$search.'%')
                       ->orderBy('users.id','DESC')
                       ->select('users.*')
-                      ->paginate(25);
+                      ->paginate(25);*/
 
         return view('cliente.listado', compact('users'));
+       // return $users;
 
 
 
