@@ -1,4 +1,4 @@
-# Admin-Steades
+# Admin Soporte Tecnico
 
 ## Installation
 
@@ -9,7 +9,7 @@
 
 - Clone the repository and run `composer install` once installed.
 
-- Create database with the name `decave` and collation `utf8_general_ci`
+- Create database with the name `soporte_tecnico` and collation `utf8_general_ci`
 
 - Create the .env file, you can see the .env.example file now add your db credential in it.
 
