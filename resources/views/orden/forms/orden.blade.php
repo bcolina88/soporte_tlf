@@ -535,33 +535,33 @@
 
 
 
-        @if ($user2->bateria ===1)
+        @if ($user2->bateria ==1)
         	document.getElementById('bateria').checked = true;
         @else
             document.getElementById('bateria').checked = false;
         @endif
 
-        @if ($user2->memoria ===1)
+        @if ($user2->memoria ==1)
         	document.getElementById('memoria').checked = true;
         @else
             document.getElementById('memoria').checked = false;
         @endif
 
 
-        @if ($user2->tapa ===1)
+        @if ($user2->tapa ==1)
         	document.getElementById('tapa').checked = true;
         @else
             document.getElementById('tapa').checked = false;
         @endif
 
-        @if ($user2->lapiz ===1)
+        @if ($user2->lapiz ==1)
         	document.getElementById('lapiz').checked = true;
         @else
             document.getElementById('lapiz').checked = false;
         @endif
 
 
-        @if ($user2->sim ===1)
+        @if ($user2->sim ==1)
         	document.getElementById('sin_card').checked = true;
         @else
             document.getElementById('sin_card').checked = false;
