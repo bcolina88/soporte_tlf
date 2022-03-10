@@ -44,7 +44,7 @@ class OrdenesController extends Controller
 
 
 
-        if(Auth::user()->idrole ===1){
+        if(Auth::user()->idrole ==1){
 
 
                 $orders = Order::Join('users', function($f) use($search)
@@ -68,7 +68,7 @@ class OrdenesController extends Controller
         }
 
 
-        if(Auth::user()->idrole ===2){
+        if(Auth::user()->idrole ==2){
 
 
         	$orders = Order::Join('users', function($f) use($search)
@@ -94,7 +94,7 @@ class OrdenesController extends Controller
 
 
 
-        if(Auth::user()->idrole ===3){
+        if(Auth::user()->idrole ==3){
 
 
         	$orders = Order::Join('users', function($f) use($search)
