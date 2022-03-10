@@ -240,7 +240,7 @@ class RolesController extends Controller
         
         $Permiso = Permiso::where('idmaestro', $id)->where('idrol', Auth::user()->idrole)->first();
 
-        if ($Permiso->ver === 1) {
+        if ($Permiso->ver == 1) {
             return true;
         }else{
             return false;
@@ -254,7 +254,7 @@ class RolesController extends Controller
         
         $Permiso = Permiso::where('idmaestro', $id)->where('idrol', Auth::user()->idrole)->first();
 
-        if ($Permiso->agregar === 1) {
+        if ($Permiso->agregar == 1) {
             return true;
         }else{
             return false;
@@ -268,7 +268,7 @@ class RolesController extends Controller
         
         $Permiso = Permiso::where('idmaestro', $id)->where('idrol', Auth::user()->idrole)->first();
 
-        if ($Permiso->editar === 1) {
+        if ($Permiso->editar == 1) {
             return true;
         }else{
             return false;
@@ -282,7 +282,7 @@ class RolesController extends Controller
         
         $Permiso = Permiso::where('idmaestro', $id)->where('idrol', Auth::user()->idrole)->first();
 
-        if ($Permiso->borrar === 1) {
+        if ($Permiso->borrar == 1) {
             return true;
         }else{
             return false;
