@@ -39,6 +39,8 @@
 {{--   {!!HTML::script('dist/js/select2.js')!!}
   {!!HTML::style('dist/css/select2.css',['rel'=>'stylesheet'])!!} --}}
 
+  <link rel="icon" type="image/jpg" href="{{ asset('assets/logos/logo.png') }}"/>
+
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>

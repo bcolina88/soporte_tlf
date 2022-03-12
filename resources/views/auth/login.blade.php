@@ -17,7 +17,7 @@
   <!-- iCheck -->
   <link rel="stylesheet" href="{{ asset('plugins/iCheck/square/blue.css') }}">
 
-
+ <link rel="icon" type="image/jpg" href="{{ asset('assets/logos/logo.png') }}"/>
 
 
 
