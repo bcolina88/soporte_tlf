@@ -35,4 +35,6 @@ class User extends Model
         return $this->belongsTo('App\Model\Role','idrole','id');
     }
 
+   
+
 }

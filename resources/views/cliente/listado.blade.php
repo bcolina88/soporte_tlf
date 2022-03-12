@@ -37,7 +37,7 @@ Listado de Clientes | Soporte Tec.
             <!-- /.box-header -->
             <div class="box-body">
               <div class="table-responsive">
-                <table class="table no-margin table-striped  table-hover">
+                <table id="example2" class="table no-margin table-striped  table-hover">
                   <thead>
                   <tr>
                     <th>#</th>
@@ -136,3 +136,21 @@ Listado de Clientes | Soporte Tec.
 
 
 @stop
+
+@section('javascript')
+
+<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
+
+@endsection
