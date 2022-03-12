@@ -15,7 +15,13 @@
   <link rel="stylesheet" href="{{ asset('dist/css/AdminLTE.min.css') }}">
  
   <!-- iCheck -->
-  <link rel="stylesheet" href="{{ asset('plugins/iCheck/square/blue.css') }}"><!DOCTYPE html>
+  <link rel="stylesheet" href="{{ asset('plugins/iCheck/square/blue.css') }}">
+
+
+
+
+
+  <!DOCTYPE html>
 <html>
 
   <!-- Google Font -->
@@ -27,6 +33,9 @@
 
   	<!-- logo aqui-->
      <!-- <img src="{{ asset('assets/logos/logotipo.png') }}" width="150" height="150">-->
+     <img src="{{ asset('assets/logos/logo.png') }}" width="140" height="140">
+       <br>
+    <a><b>Servicio Técnico De Celulares<a></a>
  
   </div>
   <!-- /.login-logo -->
